@@ -1,0 +1,33 @@
+.badge {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+.alarm {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ellipsis__alarm {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.find-screen-header-cog__alarm {
+    position: absolute;
+    right: 21px;
+    top: 41px;
+}
