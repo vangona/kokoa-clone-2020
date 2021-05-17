@@ -1,124 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/styles.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Find - KoKoa Clone</title>
-    </head>
-    <body>
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>No Service</span>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="status-bar__column">
-                <span>18:43</span>
-            </div>
-            <div class="status-bar__column">
-                <span>120%</span>
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
-            </div>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - KoKoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__online">No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__battery">100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">찾기</h1>
+      <div class="screen-header__icons">
+        <div class="find-screen-header-cog__alarm alarm"></div>
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
         </div>
-
-        <header class="screen-header">
-            <h1 class="screen-header__title">Find</h1>
-            <div class="screen-header__icons">
-                <div class="find-screen-header-cog__alarm alarm"></div>
-                <span><i class="fas fa-search fa-lg"></i></span>
-                <span><i class="fas fa-cog fa-lg"></i></span>
-            </div>
-        </header>
-
-        <main class="main-screen">
-            <div class="icon-row">
-                <div class="icon-row__icon">
-                    <i class="fas fa-qrcode"></i>
-                    <span>QR Code</span>
-                </div>
-                <div class="icon-row__icon">
-                    <i class="far fa-address-book"></i>
-                    <span>Add by Contacts</span>
-                </div>
-                <div class="icon-row__icon">
-                    <i class="fas fa-fingerprint"></i>
-                    <span>Add by ID</span>
-                </div>
-                <div class="icon-row__icon">
-                    <i class="far fa-envelope"></i>
-                    <span>Invite</span>
-                </div>
-            </div>
-            <div class="recommended-friends">
-                <h6 class="recommended-friends__title">Recommended Friends</h6>
-                <span>You have no recommended friends.</span>
-            </div>
-            <div class="open-chat">
-                <div class="open-chat__header">
-                    <h4>Open Chat</h4>
-                    <a href="#">
-                        Go to Openchat Home <i class="fas fa-chevron-right fa-sm"></i>
-                    </a>
-
-                </div>
-                <div class="open-post">
-                    <div class="open-post__column">
-                        <h5 class="open-post__title">#BTS</h5>
-                        <h6 class="open-post__hashtags">#bts#army#friends</h6>
-                        <div class="open-post__members">
-                            <img src="img/20200913_170210.jpg" />
-                            <span class="open-post__member-count">802 members</span>
-                            <div class="divider"></div>
-                            <span class="open-post__member-status">Active</span>
-                        </div>
-                    </div>
-                    <div class="open-post__column">
-                        <div class="open-post__photo">
-                            <img src="img/20200913_170210.jpg" />
-                            <div class="open-post__heart-count">
-                                <i class="fas fa-heart fa-xs"></i><span>326</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__btn">
-                    <a class="nav__link" href="friends.html">
-                        <i class="far fa-user fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="chats.html">
-                        <span class="nav__notification badge">1</span>
-                        <i class="far fa-comment fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="find.html">
-                        <i class="fas fa-search fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="more.html">
-                        <div class="alarm nav-ellipsis__alarm"></div>
-                        <i class="fas fa-ellipsis-h fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <div id="no-mobile">
-            <span>Your screen is too big</span>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>연락처로 추가하기</span>
         </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>ID로 추가하기</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>초대하기</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">추천 친구 목록</h6>
+        <span>추천 친구 목록이 없습니다.</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>오픈챗</h4>
+          <a href="#">
+            오픈챗 홈으로 <i class="fas fa-chevron-right fa-sm"></i>
+          </a>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#DDAT</h5>
+            <h6 class="open-post__hashtags">#ddat#ggee</h6>
+            <div class="open-post__members">
+              <img src="img/ddat.jfif" />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="img/ddat.jfif" />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-        <script 
-            src="https://kit.fontawesome.com/f3aa8c7c0c.js" crossorigin="anonymous">
-        </script>
-    </body>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="alarm nav-ellipsis__alarm"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span
+        >GOGONA TALK은 핸드폰 크기의 화면에 최적화 되어있습니다. <br />
+        화면크기를 줄여주세요.
+      </span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f3aa8c7c0c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/battery.js"></script>
+    <script src="js/online.js"></script>
+  </body>
 </html>

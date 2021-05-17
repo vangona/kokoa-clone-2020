@@ -1,87 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/styles.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chat with Gona - KoKoa Clone</title>
-    </head>
-    <body id="chat-screen">
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>No Service</span>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="status-bar__column">
-                <span>18:43</span>
-            </div>
-            <div class="status-bar__column">
-                <span>120%</span>
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
-            </div>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat with Gona - KoKoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__online">No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__battery">100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Gona</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2020</div>
+      <div class="message-row">
+        <img src="img/20200913_170210.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">땃쥐</span>
+          <div class="message__info">
+            <span class="message__bubble">
+              땃쥐들이 즐겨하는 화장이 뭔지 알아?</span
+            >
+            <span class="message__time">21:27</span>
+          </div>
         </div>
+      </div>
 
-        <header class="alt-header">
-            <div class="alt-header__column">
-                <a href="chats.html">
-                    <i class="fas fa-angle-left fa-3x"></i>
-                </a>
-            </div>
-            <div class="alt-header__column">
-                <h1 class="alt-header__title">Gona</h1>
-            </div>
-            <div class="alt-header__column">
-                <span><i class="fas fa-search fa-2x"></i></span>
-                <span><i class="fas fa-bars fa-2x"></i></span>
-            </div>
-        </header>
-
-        <main class="main-screen main-chat">
-            <div class="chat__timestamp">   
-                Tuesday, June 30, 2020
-            </div>
-            <div class="message-row">
-                <img src="img/20200913_170210.jpg" />
-                <div class="message-row__content">
-                    <span class="message__author">Gona</span>
-                    <div class="message__info">
-                        <span class="message__bubble">Hi!</span>
-                        <span class="message__time">21:27</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="message-row message-row__own">
-                <div class="message-row__content">
-                    <div class="message__info">
-                        <span class="message__bubble">Thank you!</span>
-                        <span class="message__time">21:27</span>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <form class="reply">
-            <div class="reply__column">
-                <i class="far fa-plus-square fa-lg"></i>
-            </div>
-            <div class="reply__column">
-                <input type="text" placeholder="Write a message...">
-                <i class="far fa-grin fa-lg"></i>
-                <button>
-                    <i class="fas fa-arrow-up"></i>
-                </button>
-            </div>
-        </form>
-
-        <div id="no-mobile">
-            <span>Your screen is too big :(</span>
+      <div class="message-row message-row__own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">???</span>
+            <span class="message__time">21:27</span>
+          </div>
         </div>
+      </div>
 
-        <script 
-            src="https://kit.fontawesome.com/f3aa8c7c0c.js" crossorigin="anonymous">
-        </script>
-    </body>
+      <div class="message-row">
+        <img src="img/20200913_170210.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">땃쥐</span>
+          <div class="message__info">
+            <span class="message__bubble"> 그건 바로...</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img src="img/20200913_170210.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">땃쥐</span>
+          <div class="message__info">
+            <span class="message__bubble"> 볼땃쥐야!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row__own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">귀여워라...</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-grin fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span
+        >GOGONA TALK은 핸드폰 크기의 화면에 최적화 되어있습니다. <br />
+        화면크기를 줄여주세요.
+      </span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f3aa8c7c0c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/battery.js"></script>
+    <script src="js/online.js"></script>
+    <script src="js/date.js"></script>
+  </body>
 </html>

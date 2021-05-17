@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;600&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -21,11 +21,20 @@
 @import "screens/chat.css";
 
 body {
-    height: auto;
-    color: #2e363e;
-    font-family: 'Noto Sans KR', sans-serif;
+  height: auto;
+  color: #2e363e;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .main-screen {
-    padding: 0px var(--horizontal-space);
+  padding: 0px var(--horizontal-space);
+}
+
+.fas.fa-bolt,
+.status-bar__online {
+  display: none;
+}
+
+.showing {
+  display: flex !important;
 }

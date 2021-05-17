@@ -1,6 +1,20 @@
 #chat-screen {
   background-color: #abc1d1;
   height: 300vh;
+  overflow: auto;
+}
+
+#chat-screen::-webkit-scrollbar {
+  width: 10px;
+}
+
+#chat-screen::-webkit-scrollbar-track {
+  background-color: #abc1d1;
+}
+
+#chat-screen::-webkit-scrollbar-thumb {
+  background-color: #92a5b2;
+  border-radius: 5px;
 }
 
 #chat-screen .alt-header,
@@ -35,6 +49,7 @@
   font-size: 14px;
   border-radius: 25px;
   margin-bottom: 25px;
+  letter-spacing: 2px;
 }
 
 @keyframes messageFadeIn {
@@ -50,9 +65,18 @@
 
 .message-row {
   width: 100%;
+  opacity: 0;
   display: flex;
   margin-bottom: 25px;
-  animation: messageFadeIn 0.5s linear;
+  animation: messageFadeIn 0.5s linear forwards;
+}
+
+.message-row:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.message-row:nth-child(5) {
+  animation-delay: 1.5s;
 }
 
 .message-row img {
@@ -103,6 +127,10 @@
   justify-content: flex-end;
   animation: myMessageFadeIn 0.5s linear forwards;
   animation-delay: 0.5s;
+}
+
+.message-row__own:last-child {
+  animation-delay: 2s;
 }
 
 .message-row__own .message__bubble {
